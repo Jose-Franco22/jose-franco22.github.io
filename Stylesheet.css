@@ -221,32 +221,5 @@
         height: clamp(14rem, 28vw, 26.75rem);
     }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode #services-448 .cs-topper {
-        color: var(--primaryLight);
-    }
-    body.dark-mode #services-448 .cs-title {
-        color: var(--bodyTextColorWhite);
-    }
-    body.dark-mode #services-448 .cs-text {
-        color: var(--bodyTextColorWhite);
-        opacity: 0.8;
-    }
-    body.dark-mode #services-448 .cs-flex,
-    body.dark-mode #services-448 .cs-wrapper {
-        background-color: var(--medium);
-    }
-    body.dark-mode #services-448 .cs-icon {
-        filter: grayscale(1) brightness(2000%);
-    }
-    body.dark-mode #services-448 .cs-h3,
-    body.dark-mode #services-448 .cs-item-text {
-        color: var(--bodyTextColorWhite);
-    }
-    body.dark-mode #services-448 .cs-link {
-        color: var(--primaryLight);
-    }
-}
 
                                 
