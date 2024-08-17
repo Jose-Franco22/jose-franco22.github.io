@@ -18,7 +18,7 @@
             /* 13px - 16px */
             --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
             /* 31px - 49px */
-            --headerFontSize: clamp(1.9375rem, 3vw, 3.5rem);
+            --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
             --bodyFontSize: 1rem;
             /* 60px - 100px top and bottom */
             --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
@@ -48,15 +48,14 @@
         }
 
         .cs-title {
-            font-family: Verdana;
             font-size: var(--headerFontSize);
             font-weight: 900;
-            line-height: 1.2em;
-            text-align: inherit;
+            line-height: 2.2em;
+            text-align: center;
             max-width: 43.75rem;
             margin: 0 0 1rem 0;
             color: var(--headerColor);
-            position: relative;
+         
         }
 
         .cs-text {
@@ -68,274 +67,364 @@
             margin: 0;
             color: var(--bodyTextColor);
         }
-       
-                /*-- -------------------------- -->
-                <---          Services          -->
-                <--- -------------------------- -*/
+        
+    </style>
+    <style>
+     
 
-                /* Mobile - 360px */
-                @media only screen and (min-width: 0rem) {
-                    #services-885 {
-                        padding: var(--sectionPadding);
-                        /* clips the svg wave from overflowing */
-                        overflow: hidden;
-                        position: relative;
-                        background-color: #f7f7f7;
-                        z-index: 1;
-                    }
+        /* Mobile - 360px */
+        @media only screen and (min-width: 0rem) {
+            #meet-team-1765 {
+                padding: var(--sectionPadding);
+                background-color: #1a1a1a;
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+            }
 
-                        #services-885 .cs-container {
-                            width: 100%;
-                            /* changes to 1280px at tablet */
-                            max-width: 34.375rem;
-                            margin: auto;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            /* 48px - 64px */
-                            gap: clamp(3rem, 6vw, 4rem);
-                        }
-
-                        #services-885 .cs-content {
-                            /* set text align to left if content needs to be left aligned */
-                            text-align: center;
-                            width: 100%;
-                            display: flex;
-                            flex-direction: column;
-                            /* centers content horizontally, set to flex-start to left align */
-                            align-items: center;
-                        }
-
-                        #services-885 .cs-card-group {
-                            width: 100%;
-                            margin: 0;
-                            padding: 0;
-                            display: grid;
-                            grid-template-columns: repeat(4, 1fr);
-                            /* 16px - 20px */
-                            gap: clamp(1rem, 2vw, 1.25rem);
-                            position: relative;
-                            z-index: 1;
-                        }
-
-                        #services-885 .cs-item {
-                            list-style: none;
-                            width: 100%;
-                            margin: 0;
-                            padding: 0;
-                            grid-column: span 4;
-                        }
-
-                        #services-885 .cs-link {
-                            text-align: center;
-                            text-decoration: none;
-                            width: 100%;
-                            height: 26.25rem;
-                            padding: 1.25rem;
-                            /* prevents padding and border from affecting height and width */
-                            box-sizing: border-box;
-                            border-radius: 1rem;
-                            /* clips img corners around the border */
-                            overflow: hidden;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: flex-end;
-                            gap: 0.75rem;
-                            position: relative;
-                        }
-
-                        #services-885 .cs-h3 {
-                            font-size: 1.25rem;
-                            line-height: 1.2em;
-                            text-align: inherit;
-                            font-weight: 700;
-                            margin: 0;
-                            color: var(--bodyTextColorWhite);
-                        }
-
-                        #services-885 .cs-item-p {
-                            font-size: 1rem;
-                            line-height: 1.5em;
-                            text-align: inherit;
-                            margin: 0;
-                            color: var(--bodyTextColorWhite);
-                        }
-
-                        #services-885 .cs-background {
-                            width: 100%;
-                            height: 100%;
-                            display: block;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            z-index: -1;
-                            object-fit: cover;
-                        }
-
-                            #services-885 .cs-background:before {
-                                /* gradient overlay */
-                                content: "";
-                                width: 100%;
-                                height: 100%;
-                                background: linear-gradient( 0deg, #000000 10.13%, rgba(0, 0, 0, 0) 40.71% );
-                                opacity: 1;
-                                position: absolute;
-                                display: block;
-                                bottom: 0;
-                                left: 0;
-                                transition: height 0.3s;
-                            }
-
-                            #services-885 .cs-background img {
-                                height: 100%;
-                                width: 100%;
-                                /* Makes img tag act as a background image */
-                                object-fit: cover;
-                                position: relative;
-                                z-index: -1;
-                                transition: transform 0.6s;
-                            }
-
-                        #services-885 .cs-button-solid {
-                            font-size: 1rem;
-                            /* 46px - 56px */
-                            line-height: clamp(2.875em, 5.5vw, 3.5em);
-                            text-decoration: none;
-                            font-weight: 700;
-                            text-align: center;
-                            margin: 0;
-                            color: #fff;
-                            min-width: 9.375rem;
-                            padding: 0 1.5rem;
-                            background-color: var(--primary);
-                            border-radius: 0.25rem;
-                            display: inline-block;
-                            position: relative;
-                            z-index: 1;
-                            /* prevents padding from adding to the width */
-                            box-sizing: border-box;
-                        }
-
-                            #services-885 .cs-button-solid:before {
-                                content: "";
-                                position: absolute;
-                                height: 100%;
-                                width: 0%;
-                                background: #000;
-                                opacity: 1;
-                                top: 0;
-                                left: 0;
-                                z-index: -1;
-                                border-radius: 0.25rem;
-                                transition: width 0.3s;
-                            }
-
-                            #services-885 .cs-button-solid:hover:before {
-                                width: 100%;
-                            }
-
-                        #services-885 .cs-wave {
-                            /* we're stretching the svg wider than the viewport so it's taller and has more of a presence */
-                            width: 320%;
-                            height: auto;
-                            display: block;
-                            position: absolute;
-                            left: 50%;
-                            bottom: 0;
-                            transform: translateX(-50%);
-                            z-index: -1;
-                        }
+                #meet-team-1765 .cs-container {
+                    width: 100%;
+                    max-width: 80rem;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    /* 48px - 64px */
+                    gap: clamp(3rem, 6.5vw, 4rem);
                 }
-                /* Tablet - 768px */
-                @media only screen and (min-width: 48rem) {
-                    #services-885 .cs-container {
-                        max-width: 80rem;
-                    }
 
-                    #services-885 .cs-item {
-                        grid-column: span 2;
-                    }
+                #meet-team-1765 .cs-content {
+                    /* set text align to center if content needs to be center aligned */
+                    text-align: center;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
                 }
-                /* Small Desktop - 1024px */
-                @media only screen and (min-width: 64rem) {
-                    #services-885 {
-                        /* the padding grows with the screen width so as the svg gets taller it doesn't overlap the section */
-                        padding-bottom: 14vw;
+
+                #meet-team-1765 .cs-flex-wrapper {
+                    max-width: 37.5rem;
+                    /* lets the div's contents act as though it doesn't exist and can be children of the next surrounding parent div, in this case the cs-content. That way we can place the button under the cs-wrapper on mobile, but bring it back under the header on tablet */
+                    display: contents;
+                }
+
+                #meet-team-1765 .cs-title {
+                    margin: 0;
+                    /* 16px - 32px */
+                    margin-bottom: clamp(1rem, 3vw, 2rem);
+                    color: var(--bodyTextColorWhite);
+                }
+
+                #meet-team-1765 .cs-wrapper {
+                    max-width: 39.5rem;
+                }
+
+                #meet-team-1765 .cs-text {
+                    margin: 0 0 2rem 0;
+                    color: var(--bodyTextColorWhite);
+                    opacity: 0.8;
+                }
+
+                #meet-team-1765 .cs-button-solid {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    /* 46px - 56px */
+                    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+                    text-align: center;
+                    text-decoration: none;
+                    min-width: 9.375rem;
+                    margin: 0;
+                    margin-top: 2rem;
+                    /* prevents padding from adding to the width */
+                    box-sizing: border-box;
+                    padding: 0 1.5rem;
+                    color: #F7F7F7;
+                    background-color: var(--primary);
+                    display: inline-block;
+                    position: relative;
+                    z-index: 1;
+                }
+
+                    #meet-team-1765 .cs-button-solid:before {
+                        content: "";
+                        width: 0%;
+                        height: 100%;
+                        background: #000;
+                        opacity: 1;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        transition: width 0.3s;
                     }
 
-                        #services-885 .cs-item {
-                            grid-column: span 1;
-                        }
-
-                        #services-885 .cs-link:hover .cs-h3,
-                        #services-885 .cs-link:focus-within .cs-h3 {
-                            color: var(--primary);
-                            transform: translateY(0);
-                        }
-
-                        #services-885 .cs-link:hover .cs-item-p,
-                        #services-885 .cs-link:focus-within .cs-item-p {
-                            height: auto;
-                            opacity: 1;
-                            transform: translateY(0);
-                        }
-
-                        #services-885 .cs-link:hover .cs-background:before,
-                        #services-885 .cs-link:focus-within .cs-background:before {
-                            height: 180%;
-                        }
-
-                        #services-885 .cs-link:hover .cs-background img,
-                        #services-885 .cs-link:focus-within .cs-background img {
-                            transform: scale(1.1);
-                        }
-
-                        #services-885 .cs-h3 {
-                            /* transform down the same amount as the flex gap */
-                            transform: translateY(0.75rem);
-                            transition: transform 0.3s, color 0.3s;
-                        }
-
-                        #services-885 .cs-item-p {
-                            height: 0;
-                            opacity: 0;
-                            overflow: hidden;
-                            transform: translateY(3.125rem);
-                            transition: height 0.3s, opacity 0.3s, transform 0.3s;
-                        }
-
-                        #services-885 .cs-wave {
-                            width: 100%;
-                            left: 0;
-                            transform: none;
-                        }
-                }
-                /* Dark Mode */
-                @media only screen and (min-width: 0rem) {
-                    body.dark-mode #services-885 {
-                        background-color: rgba(0, 0, 0, 0.2);
+                    #meet-team-1765 .cs-button-solid:hover:before {
+                        width: 100%;
                     }
 
-                        body.dark-mode #services-885 .cs-topper {
-                            color: var(--primaryLight);
-                        }
-
-                        body.dark-mode #services-885 .cs-title,
-                        body.dark-mode #services-885 .cs-text {
-                            color: var(--bodyTextColorWhite);
-                        }
-
-                        body.dark-mode #services-885 .cs-text {
-                            opacity: 0.8;
-                        }
-
-                        body.dark-mode #services-885 .cs-wave path {
-                            fill: var(--dark);
-                        }
+                #meet-team-1765 .cs-button-solid {
+                    margin: 0;
+                    display: inline-block;
+                    order: 2;
                 }
-                /*-- -------------------------- -->
-        <---           Stats            -->
-        <--- -------------------------- -*/
+
+                #meet-team-1765 .cs-text {
+                    max-width: 40rem;
+                    margin-bottom: 1.5rem;
+                    position: relative;
+                    z-index: 1;
+                }
+
+                #meet-team-1765 .cs-ul {
+                    max-width: 39.375rem;
+                    margin: 0 0 2rem 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.75rem;
+                }
+
+                #meet-team-1765 .cs-li {
+                    font-size: var(--bodyFontSize);
+                    list-style: none;
+                    line-height: 1.5em;
+                    width: 100%;
+                    color: var(--bodyTextColorWhite);
+                    opacity: 0.8;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+
+                #meet-team-1765 .cs-check-icon {
+                    width: 1.5rem;
+                    height: auto;
+                    /* adds extra space between the icon and top of parent so it's more centered */
+                    margin-top: 1px;
+                    display: block;
+                }
+
+                #meet-team-1765 .cs-card-group {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    display: grid;
+                    flex-direction: column;
+                    grid-template-columns: repeat(12, 1fr);
+                    /* 16px - 20px */
+                    gap: 1.5rem;
+                    position: relative;
+                }
+
+                #meet-team-1765 .cs-item {
+                    list-style: none;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                    grid-column: span 12;
+                    /* 16px - 20px */
+                    gap: clamp(1rem, 2vw, 1.25rem);
+                    position: relative;
+                }
+
+                    #meet-team-1765 .cs-item:hover .cs-picture img {
+                        opacity: 0.4;
+                        transform: scale(1.2);
+                    }
+
+                    #meet-team-1765 .cs-item:hover .cs-link {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+
+                        #meet-team-1765 .cs-item:hover .cs-link:hover {
+                            /* we need to add the hover styles for the cs-link inside the cs-item hover for specifcity. There's a transform none on the cs-link when we hover over the cs-item, so for the transform to work when we hover over the cs-link, we add it while the hover is active on the cs-item. This allows it to be more specific and override the transform 0 it adds to the cs-link */
+                            transform: scale(1.15);
+                            transition: transform 0.3s;
+                            transition-delay: 0;
+                        }
+
+                    #meet-team-1765 .cs-item:hover .cs-job {
+                        color: var(--primary);
+                    }
+
+                #meet-team-1765 .cs-image-group {
+                    width: 100%;
+                    height: auto;
+                    margin: 0;
+                    position: relative;
+                    z-index: 1;
+                    aspect-ratio: 0.91691395;
+                    flex: 1 0 0;
+                }
+
+                #meet-team-1765 .cs-picture {
+                    width: 100%;
+                    height: 100%;
+                    /* removed at tablet */
+                    aspect-ratio: 328/260;
+                    background-color: #000;
+                    /* clips the img corners */
+                    /* clips img tag from overflowing it on hover */
+                    display: block;
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                    #meet-team-1765 .cs-picture img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        /* makes sure the top of the image is at the top of the parent, heads won't get cut off this way */
+                        object-position: top;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transition: transform 0.7s, opacity 0.3s;
+                    }
+
+                #meet-team-1765 .cs-social {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: 0.5rem;
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                    z-index: 1;
+                }
+
+                #meet-team-1765 .cs-link {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    padding: 0.5rem;
+                    background-color: #F7F7F7;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                    transform: translateY(-1rem);
+                    transition: transform 0.6s, opacity 0.6s;
+                }
+
+                    #meet-team-1765 .cs-link:nth-of-type(2) {
+                        transition-delay: 0.08s;
+                    }
+
+                    #meet-team-1765 .cs-link:nth-of-type(3) {
+                        transition-delay: 0.16s;
+                    }
+
+                #meet-team-1765 .cs-icon {
+                    width: 1.25rem;
+                    height: auto;
+                    display: block;
+                }
+
+                #meet-team-1765 .cs-info {
+                    width: 100%;
+                    /* prevents padding and border from affecting height and width */
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 0.5rem;
+                    transition: background-color 0.3s;
+                }
+
+                #meet-team-1765 .cs-name {
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                    line-height: 1.2em;
+                    text-transform: uppercase;
+                    margin: 0;
+                    color: var(--bodyTextColorWhite);
+                    display: block;
+                    transition: color 0.3s;
+                }
+
+                #meet-team-1765 .cs-job {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    line-height: 1.2em;
+                    margin: 0;
+                    color: var(--bodyTextColorWhite);
+                    opacity: 0.8;
+                    display: block;
+                    transition: color 0.3s;
+                }
+        }
+        /* Tablet - 768px */
+        @media only screen and (min-width: 48rem) {
+            #meet-team-1765 .cs-container {
+                max-width: 107.5rem;
+                /* 48px - 64px */
+                gap: clamp(3rem, 6vw, 4rem);
+            }
+
+            #meet-team-1765 .cs-content {
+                text-align: center;
+                max-width: 80rem;
+                height: auto;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 3rem;
+                columns: 2;
+            }
+
+            #meet-team-1765 .cs-flex-wrapper {
+                width: 40vw;
+                display: block;
+                /* prevents flexbox from squishing it */
+                flex: none;
+            }
+
+            #meet-team-1765 .cs-ul {
+                margin: 0;
+            }
+
+            #meet-team-1765 .cs-card-group {
+                /* 16px - 20px */
+                column-gap: clamp(1rem, 2vw, 1.25rem);
+                row-gap: 2.5rem;
+            }
+
+            #meet-team-1765 .cs-item {
+                grid-column: span 4;
+            }
+
+            #meet-team-1765 .cs-picture {
+                /* 260px - 440px */
+                height: clamp(16.25rem, 33.2vw, 27.5rem);
+                aspect-ratio: initial;
+            }
+        }
+        /* Large Desktop - 1300px */
+        @media only screen and (min-width: 81.25rem) {
+            #meet-team-1765 .cs-ul {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            #meet-team-1765 .cs-li {
+                width: 48%;
+            }
+
+            #meet-team-1765 .cs-card-group {
+                grid-template-columns: repeat(10, 1fr);
+            }
+
+            #meet-team-1765 .cs-item {
+                grid-column: span 2;
+            }
+        }
+    </style>
+    <style>
+                
 
                 /* Mobile - 360px */
                 @media only screen and (min-width: 0rem) {
@@ -442,138 +531,198 @@
                 }
     </style>
 
-
-
-
 </head>
 <body>
-    <!-- ============================================ -->
-    <!--                  Services                    -->
-    <!-- ============================================ -->
+   
 
-    <section id="services-885">
+    <section id="meet-team-1765">
         <div class="cs-container">
             <div class="cs-content">
-                <img loading="lazy" decoding="async" src="franks-removebg-preview.png" alt="Franco's Furniture" width="450" height="200">
-                <h2 class="cs-title">Franco's Furniture</h2>
-                <p class="cs-text">
-
-                </p>
+                <div class="cs-flex-wrapper">
+                    <div class="cs-flex">
+                        <h2 class="cs-title">Carlos Garza
+                    </div>
+                    <a href="" class="cs-button-solid">Book Now!</a>
+                </div>
+                <div class="cs-wrapper">
+                    <ul class="cs-ul">
+                    </ul>
+                </div>
             </div>
             <ul class="cs-card-group">
                 <li class="cs-item">
-                    <a class="cs-link">
-                        <h3 class="cs-h3">Sofas</h3>
-                        <p class="cs-item-p">
-                            Venta de Sofa en varios colores y estilos
-                        </p>
-                        <!--Backgorund Image-->
-                        <picture class="cs-background">
+                    <div class="cs-image-group">
+                        <picture class="cs-picture">
                             <!--Mobile Image-->
-                            <source media="(max-width: 600px)" srcset="sofa.png">
+                            <source media="(max-width: 600px)" srcset="">
                             <!--Tablet and above Image-->
-                            <source media="(min-width: 601px)" srcset="sofa.png">
-                            <img loading="lazy" decoding="async" src="sofa.png" alt="person" width="500" height="568">
+                            <source media="(min-width: 601px)" srcset="">
+                            <img loading="lazy" decoding="async" src="" alt="person" width="305" height="440">
                         </picture>
-                    </a>
+                        <div class="cs-social">
+                            <a href="" class="cs-link" aria-label="Facebook" target="_blank" rel="noopener">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-grey.svg" alt="facebook" width="20" height="20">
+                            </a>
+                            <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/x-grey.svg" alt="twitter" width="20" height="20">
+                            </a>
+                            <a href="" class="cs-link" aria-label="Instagram" target="_blank" rel="noopener">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-grey.svg" alt="instagram" width="20" height="20">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cs-info">
+                        <span class="cs-name">Name</span>
+                        <span class="cs-job">Review</span>
+                    </div>
                 </li>
                 <li class="cs-item">
-                    <a class="cs-link">
-                        <h3 class="cs-h3">Cocinas</h3>
-                        <p class="cs-item-p">
-                            Venta de cosinas en varios colores y estilos
-                        </p>
-                        <!--Backgorund Image-->
-                        <picture class="cs-background">
+                    <div class="cs-image-group">
+                        <picture class="cs-picture">
                             <!--Mobile Image-->
-                            <source media="(max-width: 600px)" srcset="western.png">
+                            <source media="(max-width: 600px)" srcset="">
                             <!--Tablet and above Image-->
-                            <source media="(min-width: 601px)" srcset="western.png">
-                            <img loading="lazy" decoding="async" src="western.png" alt="person" width="750" height="568">
+                            <source media="(min-width: 601px)" srcset="">
+                            <img loading="lazy" decoding="async" src="" alt="person" width="305" height="440">
                         </picture>
-                    </a>
+                        <div class="cs-social">
+                            <a href="" class="cs-link" aria-label="Facebook" target="_blank" rel="noopener">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-grey.svg" alt="facebook" width="20" height="20">
+                            </a>
+                            <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/x-grey.svg" alt="twitter" width="20" height="20">
+                            </a>
+                            <a href="" class="cs-link" aria-label="Instagram" target="_blank" rel="noopener">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-grey.svg" alt="instagram" width="20" height="20">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cs-info">
+                        <span class="cs-name">Name</span>
+                        <span class="cs-job">Review</span>
+                    </div>
                 </li>
                 <li class="cs-item">
-                    <a class="cs-link">
-                        <h3 class="cs-h3">Recamaras</h3>
-                        <p class="cs-item-p">
-                            Venta de recamaras, camas, y box en varios colores y estilos
-                        </p>
-                        <!--Backgorund Image-->
-                        <picture class="cs-background">
+                    <div class="cs-image-group">
+                        <picture class="cs-picture">
                             <!--Mobile Image-->
-                            <source media="(max-width: 600px)" srcset="bed.png">
+                            <source media="(max-width: 600px)" srcset="">
                             <!--Tablet and above Image-->
-                            <source media="(min-width: 601px)" srcset="bed.png">
-                            <img loading="lazy" decoding="async" src="bed.png" alt="person" width="900" height="568">
+                            <source media="(min-width: 601px)" srcset="">
+                            <img loading="lazy" decoding="async" src="" alt="person" width="305" height="440">
                         </picture>
-                    </a>
+                        <div class="cs-social">
+                            <a href="" class="cs-link" aria-label="Facebook" target="_blank" rel="noopener">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-grey.svg" alt="facebook" width="20" height="20">
+                            </a>
+                            <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/x-grey.svg" alt="twitter" width="20" height="20">
+                            </a>
+                            <a href="" class="cs-link" aria-label="Instagram" target="_blank" rel="noopener">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-grey.svg" alt="instagram" width="20" height="20">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cs-info">
+                        <span class="cs-name">Name</span>
+                        <span class="cs-job">Review</span>
+                    </div>
                 </li>
-                    <li class="cs-item">
-                    <a class="cs-link">
-                        <h3 class="cs-h3">Venta de Mini Split</h3>
-                        <p class="cs-item-p">
-                            Venta de Mini-Split Comfortotal de 1 ton y de 2 ton
-                        </p>
-                        <!--Backgorund Image-->
-                        <picture class="cs-background">
+                <li class="cs-item">
+                    <div class="cs-image-group">
+                        <picture class="cs-picture">
                             <!--Mobile Image-->
-                            <source media="(max-width: 600px)" srcset="ac.jpg">
+                            <source media="(max-width: 600px)" srcset="">
                             <!--Tablet and above Image-->
-                            <source media="(min-width: 601px)" srcset="ac.jpg">
-                            <img loading="lazy" decoding="async" src="ac.jpg" alt="person" width="1280" height="568">
+                            <source media="(min-width: 601px)" srcset="">
+                            <img loading="lazy" decoding="async" src="" alt="person" width="305" height="440">
                         </picture>
-                    </a>
+                        <div class="cs-social">
+                            <a href="" class="cs-link" aria-label="Facebook" target="_blank" rel="noopener">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-grey.svg" alt="facebook" width="20" height="20">
+                            </a>
+                            <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/x-grey.svg" alt="twitter" width="20" height="20">
+                            </a>
+                            <a href="" class="cs-link" aria-label="Instagram" target="_blank" rel="noopener">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-grey.svg" alt="instagram" width="20" height="20">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cs-info">
+                        <span class="cs-name">Name</span>
+                        <span class="cs-job">Review</span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-image-group">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="">
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)" srcset="">
+                            <img loading="lazy" decoding="async" src="" alt="person" width="305" height="440">
+                        </picture>
+                        <div class="cs-social">
+                            <a href="" class="cs-link" aria-label="Facebook" target="_blank" rel="noopener">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-grey.svg" alt="facebook" width="20" height="20">
+                            </a>
+                            <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/x-grey.svg" alt="twitter" width="20" height="20">
+                            </a>
+                            <a href="" class="cs-link" aria-label="Instagram" target="_blank" rel="noopener">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-grey.svg" alt="instagram" width="20" height="20">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cs-info">
+                        <span class="cs-name">Name</span>
+                        <span class="cs-job">Review</span>
+                    </div>
                 </li>
             </ul>
         </div>
-        <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
-        <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white" />
-        </svg>
     </section>
 
 </body>
 
+<body>
+  
+    <div id="contact-strip-324">
+        <ul class="cs-stat-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-grey.svg" alt="icon" width="35" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <div class="cs-flex-group">
+                    <span class="cs-header">Phone</span>
+                    <a href="tel:555-456-7899" class="cs-link">+1 (555) 456 7899</a>
+                    <a href="tel:555-456-7899" class="cs-link">+1 (555) 456 7899</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-grey.svg" alt="icon" width="40" height="35" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <div class="cs-flex-group">
+                    <span class="cs-header">Address</span>
+                    <a href="" class="cs-link">123 Fake St, STE 100 <br> Somewhere, FL 98755</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/clock-grey.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <div class="cs-flex-group">
+                    <span class="cs-header">Open Hours</span>
+                    <span class="cs-hours">Monday To Saturday</span>
+                    <span class="cs-hours">9:00 AM - 10:30 PM</span>
+                </div>
+            </li>
+        </ul>
+    </div>
 
-<!-- ============================================ -->
-<!--                   Stats                      -->
-<!-- ============================================ -->
-<!-- No headers, so no section tag -->
-<div id="contact-strip-324">
-    <ul class="cs-stat-group">
-        <li class="cs-item">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-grey.svg" alt="icon" width="35" height="40" loading="lazy" decoding="async" aria-hidden="true">
-            </picture>
-            <div class="cs-flex-group">
-                <span class="cs-header">Phone</span>
-                <a href="tel:956-844-0343" class="cs-link">+1 (956) 844 0343</a>
-                <a href="tel:956-224-1042" class="cs-link">+1 (956) 224 1042</a>
-            </div>
-        </li>
-        <li class="cs-item">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-grey.svg" alt="icon" width="40" height="35" loading="lazy" decoding="async" aria-hidden="true">
-            </picture>
-            <div class="cs-flex-group">
-                <span class="cs-header">Address</span>
-                <a href="https://www.google.com/maps/place/953+4th+St,+Roma,+TX+78584/@26.4001375,-98.9998647,19.75z/data=!4m6!3m5!1s0x86646e1726c3f4c5:0x7977077c659638a4!8m2!3d26.400081!4d-98.9993502!16s%2Fg%2F11cp96t4sj?entry=ttu" class="cs-link">953 4th St <br> Roma, TX 78584</a>
-            </div>
-        </li>
-        <li class="cs-item">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/clock-grey.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
-            </picture>
-            <div class="cs-flex-group">
-                <span class="cs-header">Open Hours</span>
-                <span class="cs-hours">Monday To Saturday</span>
-                <span class="cs-hours">9:00 AM - 10:30 PM</span>
-            </div>
-        </li>
-    </ul>
-</div>
-
+</body>
 </html>
 
 
